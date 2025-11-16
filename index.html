@@ -26,10 +26,10 @@
       <img src="images/canh2.jfif" class="background bg2" alt="Cảnh 2" style="display: none;">
       <img src="images/canh4.jpg" class="background bg3" alt="Cảnh 3" style="display: none;">
 
-      <img src="images/shark.png" class="fish fish1" alt="Cá mập" >
-      <img src="images/faintSchool.png" class="fish fish2" alt="Bầy cá">
-      <img src="images/goldFishSchool.png" class="fish fish3" alt ="Cá vàng">
-      <img src="images/turtle.png" class="fish fish4" alt="Rùa">
+      <img src="images/shark.png" class="shark fish" alt="Cá mập" >
+      <img src="images/faintSchool.png" class="faintSchool fish" alt="Ca nho">
+      <img src="images/goldFishSchool.png" class="goldFishSchool fish" alt ="Cá vàng">
+      <img src="images/turtle.png" class="turtle fish" alt="Rùa">
                 
       <img src="images/diver1.png" class="diver1 fish" alt="Thợ lặn">
       <img src="images/diver2.png" class="diver2 fish" alt="Thợ lặn">
@@ -114,35 +114,6 @@
       playBtn.style.display = 'block';
       pauseBtn.style.display = 'none';
       
-      const fishes = document.querySelectorAll(".fish, .diver1, .diver2, .diver3");
-      const aquarium = document.querySelector(".aquarium");
-      const fishData = [];
-      fishes.forEach((fish) => {
-        fishData.push({
-          el: fish,
-          x: Math.random() * (aquarium.clientWidth - 80),
-          y: Math.random() * (aquarium.clientHeight - 80),
-          vx: (Math.random() - 0.5) * 2,
-          vy: (Math.random() - 0.5) * 2,
-        });
-      });
-      
-      function animateFish() {
-        fishData.forEach((fish) => {
-          fish.x += fish.vx;
-          fish.y += fish.vy;
-
-          if (fish.x < 0 || fish.x > aquarium.clientWidth - 80) fish.vx *= -1;
-          if (fish.y < 0 || fish.y > aquarium.clientHeight - 80) fish.vy *= -1;
-
-          fish.el.style.left = fish.x + "px";
-          fish.el.style.top = fish.y + "px";
-
-          fish.el.style.transform = fish.vx > 0 ? "scaleX(1)" : "scaleX(-1)";
-        });
-        requestAnimationFrame(animateFish);
-      }
-      animateFish();
    </script>
    
 </body>

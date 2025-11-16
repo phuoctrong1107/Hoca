@@ -11,7 +11,8 @@ body {
 #diver1{
   top: 0px;
   animation: diver1 14s linear infinite;
-  left:100px; top:400px;
+  left: 100px; 
+  top: 400px;
   position: absolute;
   animation-name: diver1;
   animation-delay: 0s;
@@ -20,6 +21,7 @@ body {
   animation-iteration-count: infinite;
   animation-play-state: running;
 }
+
 @keyframes diver1 {
   0%   { left: 40%; top: 0px; transform: scaleX(1) rotate(0deg); opacity: 0.95; }
   20%  { left: 45%; top: 200px; transform: scaleX(1) rotate(2deg); } 
@@ -28,9 +30,9 @@ body {
   59%  { left: 55%; top: 700px; transform: scaleX(-1) rotate(-1deg); }
   60%  { left: 55%; top: 700px; transform: scaleX(-1) rotate(-1deg); }
   80%  { left: 50%; top: 400px; transform: scaleX(-1) rotate(-1deg); }
-  90% { left: 45%; top: 200px; transform: scaleX(-1) rotate(0deg); }
-  98% { left: 40%; top: 0px; transform: scaleX(-1) rotate(0deg); }
-  99% { left: 40%; transform: scaleX(1); }
+  90%  { left: 45%; top: 200px; transform: scaleX(-1) rotate(0deg); }
+  98%  { left: 40%; top: 0px; transform: scaleX(-1) rotate(0deg); }
+  99%  { left: 40%; transform: scaleX(1); }
   100% { left: 40%; top: 0px; transform: scaleX(1) rotate(0deg); }
 }
 
@@ -39,10 +41,12 @@ body {
   top: 120px;
   animation: diver1 20s ease infinite;
 }
+
 #diver2{
   top: 0px;
   animation: diver1 14s linear infinite;
-  left:100px; top:400px;
+  left: 100px; 
+  top: 400px;
   position: absolute;
   animation-name: diver2;
   animation-delay: 0s;
@@ -51,6 +55,7 @@ body {
   animation-iteration-count: infinite;
   animation-play-state: running;
 }
+
 @keyframes diver2 {
   0%   { left: 55%; top: 0px; transform: scaleX(1) rotate(0deg); opacity: 0.95; }
   20%  { left: 60%; top: 200px; transform: scaleX(1) rotate(2deg); } 
@@ -59,9 +64,9 @@ body {
   59%  { left: 70%; top: 700px; transform: scaleX(-1) rotate(-1deg); }
   60%  { left: 70%; top: 700px; transform: scaleX(-1) rotate(-1deg); }
   80%  { left: 65%; top: 400px; transform: scaleX(-1) rotate(-1deg); }
-  90% { left: 60%; top: 200px; transform: scaleX(-1) rotate(0deg); }
-  98% { left: 55%; top: 0px; transform: scaleX(-1) rotate(0deg); }
-  99% { left: 55%; transform: scaleX(1); }
+  90%  { left: 60%; top: 200px; transform: scaleX(-1) rotate(0deg); }
+  98%  { left: 55%; top: 0px; transform: scaleX(-1) rotate(0deg); }
+  99%  { left: 55%; transform: scaleX(1); }
   100% { left: 55%; top: 0px; transform: scaleX(1) rotate(0deg); }
 }
 
@@ -70,10 +75,12 @@ body {
   top: 120px;
   animation: diver2 25s ease infinite;
 }
+
 #diver3{
   top: 0px;
   animation: diver1 14s linear infinite;
-  left:100px; top:400px;
+  left: 100px; 
+  top: 400px;
   position: absolute;
   animation-name: diver3;
   animation-delay: 0s;
@@ -82,6 +89,7 @@ body {
   animation-iteration-count: infinite;
   animation-play-state: running;
 }
+
 @keyframes diver3 {
   0%   { left: 25%; top: 0px; transform: scaleX(1) rotate(0deg); opacity: 0.95; }
   20%  { left: 30%; top: 200px; transform: scaleX(1) rotate(2deg); } 
@@ -90,9 +98,9 @@ body {
   59%  { left: 40%; top: 700px; transform: scaleX(-1) rotate(-1deg); }
   60%  { left: 40%; top: 700px; transform: scaleX(-1) rotate(-1deg); }
   80%  { left: 35%; top: 400px; transform: scaleX(-1) rotate(-1deg); }
-  90% { left: 30%; top: 200px; transform: scaleX(-1) rotate(0deg); }
-  98% { left: 25%; top: 0px; transform: scaleX(-1) rotate(0deg); }
-  99% { left: 25%; transform: scaleX(1); }
+  90%  { left: 30%; top: 200px; transform: scaleX(-1) rotate(0deg); }
+  98%  { left: 25%; top: 0px; transform: scaleX(-1) rotate(0deg); }
+  99%  { left: 25%; transform: scaleX(1); }
   100% { left: 25%; top: 0px; transform: scaleX(1) rotate(0deg); }
 }
 
@@ -101,6 +109,72 @@ body {
   top: 120px;
   animation: diver3 30s ease infinite;
 }
+
+.turtle{
+  left: 100px; 
+  top: 400px;
+  position: absolute;
+  animation: turtle 50s ease infinite;
+  z-index: 5;
+}
+
+@keyframes turtle {
+  0%   { left: 0px; top: 310px; transform: scaleX(1); }
+  45%  { left: 1350px; top: 310px; transform: scaleX(1); }
+  50%  { left: 1350px; top: 310px; transform: scaleX(-1); }
+  95%  { left: 0px; top: 300px; transform: scaleX(-1); }
+  100% { left: 0px; top: 300px; transform: scaleX(1); }
+}
+
+.shark{
+  left: 200px; 
+  top: 300px;
+  position: absolute;
+  animation: shark 20s linear infinite;
+  z-index: 5;
+}
+
+@keyframes shark {
+  0%   { left: 0px; top: 650px; transform: scaleX(1); }
+  45%  { left: 1350px; top: 650px; transform: scaleX(1); } 
+  50%  { left: 1350px; top: 650px; transform: scaleX(-1); } 
+  95%  { left: 0px; top: 650px; transform: scaleX(-1); } 
+  100% { left: 0px; top: 650px; transform: scaleX(1); } 
+}
+
+.goldFishSchool{
+  left: 200px; 
+  top: 400px;
+  position: absolute;
+  animation: goldFishSchool 30s ease infinite;
+  z-index: 5;
+}
+
+@keyframes goldFishSchool {
+  0%   { left: 10px; top: 400px; transform: scaleX(1); }
+  49%  { left: 1350px; top: 400px; transform: scaleX(1); }
+  50%  { left: 1350px; top: 400px; transform: scaleX(-1); }
+  99%  { left: 0px; top: 400px; transform: scaleX(-1); }
+  100% { left: 0px; top: 400px; transform: scaleX(1); }
+}
+
+.faintSchool{
+  size: 300px;
+  left: 100px; 
+  top: 400px;
+  position: absolute;
+  animation: faintSchool 28s linear infinite;
+  z-index: 5;
+}
+
+@keyframes faintSchool {
+  0%   { left: -80px; top: 200px; transform: scaleX(1); }
+  45%  { left: 1350px; top: 210px; transform: scaleX(1); }
+  50%  { left: 1350px; top: 210px; transform: scaleX(-1); }
+  95%  { left: 10px; top: 200px; transform: scaleX(-1); }
+  100% { left: 0px; top: 200px; transform: scaleX(1); }
+}
+
 .title {
   text-align: center;
   color: #0056b3;
@@ -229,6 +303,7 @@ body {
   object-fit: cover; 
   z-index: 1; 
 }
+
 .fish {
   position: absolute;
   transition: transform 0.1s linear;
@@ -236,6 +311,7 @@ body {
   height: auto; 
   z-index: 5; 
 }
+
 footer {
   position: fixed;
   bottom: 0;
@@ -247,33 +323,34 @@ footer {
   font-size: 0.8em;
   z-index: 10;
 }
+
 .music-controls {
-   margin: 15px 0;
-   text-align: center;
+  margin: 15px 0;
+  text-align: center;
 }
 
 .music-controls button {
-   width: 100%;
-   padding: 10px;
-   margin: 5px 0;
-   background: linear-gradient(135deg, #3498db, #2980b9);
-   color: white;
-   border: none;
-   border-radius: 8px;
-   cursor: pointer;
-   font-size: 0.9em;
-   transition: all 0.3s ease;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
 }
 
 .music-controls button:hover {
-   transform: translateY(-2px);
-   box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
 }
 
 #playBtn {
-   background: linear-gradient(135deg, #27ae60, #219a52);
+  background: linear-gradient(135deg, #27ae60, #219a52);
 }
 
 #playBtn:hover {
-   box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
 }
