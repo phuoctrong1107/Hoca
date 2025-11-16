@@ -135,11 +135,11 @@ body {
 }
 
 @keyframes shark {
-  0%   { left: 0px; top: 650px; transform: scaleX(1); }
-  45%  { left: 1350px; top: 650px; transform: scaleX(1); } 
-  50%  { left: 1350px; top: 650px; transform: scaleX(-1); } 
-  95%  { left: 0px; top: 650px; transform: scaleX(-1); } 
-  100% { left: 0px; top: 650px; transform: scaleX(1); } 
+  0%   { left: 0px; top: 610px; transform: scaleX(1); }
+  45%  { left: 1350px; top: 610px; transform: scaleX(1); } 
+  50%  { left: 1350px; top: 610px; transform: scaleX(-1); } 
+  95%  { left: 0px; top: 610px; transform: scaleX(-1); } 
+  100% { left: 0px; top: 610px; transform: scaleX(1); } 
 }
 
 .goldFishSchool{
@@ -168,11 +168,11 @@ body {
 }
 
 @keyframes faintSchool {
-  0%   { left: -80px; top: 200px; transform: scaleX(1); }
-  45%  { left: 1350px; top: 210px; transform: scaleX(1); }
-  50%  { left: 1350px; top: 210px; transform: scaleX(-1); }
-  95%  { left: 10px; top: 200px; transform: scaleX(-1); }
-  100% { left: 0px; top: 200px; transform: scaleX(1); }
+  0%   { left: 0px; top: 180px; transform: scaleX(1); }
+  45%  { left: 1350px; top: 180px; transform: scaleX(1); }
+  50%  { left: 1350px; top: 180px; transform: scaleX(-1); }
+  95%  { left: 10px; top: 180px; transform: scaleX(-1); }
+  100% { left: 0px; top: 180px; transform: scaleX(1); }
 }
 
 .title {
